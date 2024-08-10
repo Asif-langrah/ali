@@ -1,10 +1,28 @@
-import Image from "next/image";
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>My Name is Asif</div>
-      <div>i am pakistani</div>
-    </main>
-  );
+    <div><figure className="bg-red-300 rounded-xl p-8 dark:bg-slate-800">
+    <img className="w-24 h-24 rounded-full mx-auto" src="/asifpic.jpg" alt="" width="384" height="512"/>
+    <div className="pt-6 space-y-4"/>
+      <blockquote>
+        <p className="text-lg font-medium">
+          “Tailwind CSS is the only framework that I've seen scale
+          on large teams. It’s easy to customize, adapts to any design,
+          and the build size is tiny.”
+        </p>
+      </blockquote>
+      <figcaption className="font-medium">
+        <div className="text-sky-500 dark:text-sky-400">
+          Mian Asif Langrah
+        </div>
+        <div className="text-slate-700 dark:text-slate-500">
+          Staff Engineer, Mantech
+        </div>
+      </figcaption>
+    
+  </figure></div>
+  )
 }
+
+export default page
